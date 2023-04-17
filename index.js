@@ -1,6 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 const token = '6060724879:AAGENm_rVzrr0VXFdl_HOq780g6yLiuc8S0';
 const bot = new TelegramBot(token, {polling: true});
+const axios = require('axios');
 const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('users.db');
 
